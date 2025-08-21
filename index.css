@@ -1,7 +1,24 @@
-h1{
-    color: aqua;
-    background-color: blanchedalmond;
+.body{
+    color: rgb(129, 189, 212);
 }
-p{
-    color: cadetblue;
+.titulo1{
+    color: red;
+}
+.titulo2{
+    color: rgb(216, 93, 21);
+}
+.titulo3{
+    color: rgb(202, 183, 14);
+}
+.avance{
+    color: rgb(5, 70, 48);
+}
+.soporte{
+    color: royalblue;
+}
+.encabezado{
+    color: blueviolet;
+}
+.sitio{
+    color: crimson;
 }
