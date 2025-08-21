@@ -10,3 +10,7 @@ node_modules/
 
 # Archivos con credenciales (en backend)
 .env
+
+privado/
+*.log
+~$*
