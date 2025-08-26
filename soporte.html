@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de Pedido</h1>
+    <p>completa tus datos y elige tu pedido. los campos con * son obligatorios</p>
+    <br>
+    <p>datos del cliente</p>
+    <main>
+        <p>Nombre completo*</p> 
+        <form action="procesar.php" method="post">
+            <input type="text" name="nombre" placeholder="Ej: Ana Perez" required>
+        </form>
+        <br>
+        <p>correo electronico*</p>
+        <form action="procesar.php" method="post">
+            <input type="email" name="correo" placeholder="ana@correo.com" required>
+        </form>
+        <br>
+        <p>Telefono</p>
+        <form action="procesar.php" method="post" pattern="[0-9]{8,}">
+            <input type="text" name="number" placeholder="Ej: 71234567" >
+        </form>
+        <br>
+        <p>Fecha de recogida</p>
+        <form action="procesar.php" method="dialog">
+            <input type="date" >
+        </form>
+        <br>
+        <p>Hora de recogida</p>
+        <form action="procesar.php" method="dialog">
+            <input type="time" >
+        </form>
+    </main>
+    <br>
+    <br>
+    <p>detalle del pedido</p>
+    <main>
+        <p>bebida*</p> 
+        <select name="bebida" required>
+            <option value="--selecciona una bebida--">--selecciona una bebida--</option>
+            <option value="cafe americano">cafe americano</option>
+            <option value="capuccino especial">capuccino especial</option>
+            <option value="latte con vainilla">latte con vainilla</option>
+            <option value="frappe de cafe">frappe de cafe</option>
+            <option value="limonada con menta">limonada con menta</option>
+        </select>
+        <br>
+        <p>Tamaño*</p>
+            <form>
+                <input type="radio" id="pequeno" name="tamano" value="pequeno">
+                <label for="pequeno">Pequeño</label>
+                <input type="radio" id="mediano" name="tamano" value="mediano">
+                <label for="mediano">Mediano</label>
+                <input type="radio" id="grande" name="tamano" value="grande">
+                <label for="grande">Grande</label>
+            </form>
+        <br>
+        <p>cantidad*</p>
+            <form action="procesar.php" method="get">
+                <label><input type="number" name="cantidad"></label>
+            </form>
+        <br>
+        <p>postres</p>
+        <select name="" >
+        <option value="--selecciona una bebida--">--selecciona su postre--</option>
+            <option value="brownie casero">brownie casero</option>
+            <option value="croissant de mantequilla">croissant de mantequilla</option>
+            <option value="cheesecake">cheesecake</option>
+        </select>
+        <p>cantidad de postres</p>
+            <form action="procesar.php" method="get">
+                <label><input type="number" name="cantidad"></label>
+            </form>
+        <p>Extras</p>
+            <form>
+                <input type="radio" id="leche vegetal" name="extra" value="leche vegetal">
+                <label for="leche vegetal">leche vegetal</label>
+                <input type="radio" id="extra shot" name="extra" value="extra shot">
+                <label for="extra shot">extra shot</label>
+                <input type="radio" id="sin azucar" name="extra" value="sin azucar">
+                <label for="sin azucar">sin azucar</label>
+            </form>
+        <br>
+        <p>Indicaciones / Comentarios</p>
+        <textarea 
+        name="mensaje" 
+        rows="10"
+        cols="50"
+        placeholder="Ej: sin canela, entragar en vaso termico....."
+        ></textarea>
+        <br>
+        <br>
+        <p>Entrega</p>
+        <form action="procesar.php" method="get">
+        <input type="radio" id="retiro de tienda" name="entrega" value="retiro de tienda">
+        <label for="retiro de tienda">retiro de tienda</label>
+        <input type="radio" id="entrega a domicilio" name="entrega" value="entrega a domicilio">
+        <label for="entrega a domicilio">entrega a domicilio</label>
+        </form>
+        <br>
+        <p>direccion (si es domicilio)</p>
+        <form action="procesar.php" method="post">
+            <input type="text" name="direccion" placeholder="Calle, numero, referencia" required>
+        </form>
+        <form action="procesar.php" method="post">
+            <input type="hidden" name="sucursal" value="central">
+            <input type="submit" value="Enviar pedido">
+            <input type="reset" value="Limpiar">
+        </form>
+    </main>
+    <footer>
+        <p> &copy; 2025 cafeteria aroma. todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
