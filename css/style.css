@@ -1,0 +1,126 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    margin: 20px;
+}
+
+
+h1,h2,h3{
+    color: brown;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td{
+    border: 1px solid rgb(65, 75, 88);
+    padding: 10px;
+    text-align: center;
+}
+nav{
+    background-color: darkgoldenrod;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #470505;
+    font-weight: bold;
+}
+nav a:hover {
+    color: chocolate;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+main > section{
+    margin: 18px 0;
+}
+aside {
+    margin: 16px 0;
+    padding: 10px;
+    background: #750c0c;
+    border: 1px solid rgb(167, 66, 66);
+    border-radius: 6px;
+}
+
+
+
+thead th {
+background: #f2e3d4;
+color: #3e2723;
+}
+tfoot td {
+background: #fbefe3;
+font-style: italic;
+}
+tbody tr:nth-child(odd) {
+background: #fffaf5;
+}
+
+
+a:visited { opacity: 0.95; }
+a:active { transform: scale(0.98); }
+
+aside ul li a {
+display: inline-block;
+padding: 2px 4px;
+border-radius: 4px;
+}
+aside ul li a:hover {
+background: #ffe2c9;
+}
+
+
+
+----------
+
+
+/* Formularios */
+fieldset { border: 1px solid #d7bfa7; padding: 10px; border-radius: 6px; }
+legend { font-weight: bold; color: #5a3825; }
+label { display: inline-block; margin: 6px 0 4px; }
+input, select, textarea, button {
+font: inherit;
+padding: 6px 8px;
+border: 1px solid #c7b29a;
+border-radius: 4px;
+}
+button {
+background: brown;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+button:hover { opacity: 0.9; }
+
+
+
+img, video {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+
+
+nav {
+border-radius: 6px;
+box-shadow: 0 1px 3px rgba(62, 39, 35, 0.15);
+}
+
+
+img {
+  display: block;
+  margin: 0 auto;
+
+}
