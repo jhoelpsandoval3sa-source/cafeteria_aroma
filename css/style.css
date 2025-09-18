@@ -124,3 +124,172 @@ img {
   margin: 0 auto;
 
 }
+
+--------------------
+
+
+#titulo-bienvenida {
+letter-spacing: 0.5px;
+margin-bottom: 10px;
+}
+
+.promo {
+background: #ffe8d6;
+border: 1px dashed brown;
+padding: 10px;
+border-radius: 6px;
+display: inline-block;
+}
+
+.seccion-precios > h2 {
+text-decoration: underline; 
+}
+
+.tabla-compacta th, .tabla-compacta td {
+padding: 6px;
+}
+
+.tabla-menu thead th { background: #f2e3d4; color: #3e2723; }
+.tabla-menu tbody tr:nth-child(odd) { background: #fffaf5; }
+.tabla-desayunos thead th { background: #efe1d6; }
+.tabla-desayunos tfoot td { background: #fbefe3; font-style: italic; }
+.tabla-horarios thead th { background: #e9dacb; }
+.tabla-equipo thead th { background: #ead9cc; }
+
+-------
+
+
+.form-pedido fieldset {
+border: 1px solid #cdb8a8;
+padding: 10px;
+border-radius: 6px;
+margin-bottom: 10px;
+}
+.form-pedido legend {
+color: brown;
+font-weight: bold;
+}
+
+
+.form-pedido label {
+display: inline-block;
+margin: 6px 0 4px;
+}
+.form-pedido input,
+.form-pedido select,
+.form-pedido textarea {
+font: inherit;
+padding: 6px 8px;
+border: 1px solid #bfa995;
+border-radius: 4px;
+}
+
+.btn {
+font: inherit;
+padding: 8px 12px;
+border-radius: 4px;
+border: none;
+cursor: pointer;
+}
+
+.btn-primario {
+background: brown; color: #fff;
+}
+.btn-secundario {
+background: #d7ccc8; color: #3e2723;
+}
+.btn:hover { opacity: 0.9; }
+
+nav a { color: #3e2723; }
+nav a:first-child { color: #5a3825; font-weight: 900; }
+.seccion-menu-lista {
+background: #fff8f1;
+border: 1px solid #e1c8ad;
+border-radius: 6px;
+padding: 10px;
+margin: 14px 0;
+}
+main { max-width: 980px; margin: 0 auto; }
+
+.destacado {
+background: #fff8f1;
+border-left: 4px solid brown;
+padding: 10px;
+}
+#glosario {
+color: #4e342e;
+background: #f3e5ab;
+padding: 6px;
+border-radius: 4px;
+}
+
+.tabla-menu, .tabla-desayunos {
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-pedido label {
+font-weight: bold;
+color: #5a3825;
+}
+
+aside ul li a {
+display: block;
+padding: 4px;
+border-bottom: 1px dotted #c7b29a;
+}
+aside ul li a:hover {
+background: #ffe2c9;
+}
+
+
+-----------
+
+
+* {
+box-sizing: border-box;
+}
+
+.caja {
+width: 200px;
+height: 120px;
+background-color: #ffe0b2; /* color de fondo suave */
+padding: 50px; /* espacio interno */
+border: 3px solid brown; /* borde visible */
+margin: 50px; /* espacio externo */
+}
+
+.caja-padding{
+    padding: 50px;
+}
+
+
+.caja-margen {
+background-color: #c8e6c9;
+border: 2px solid green;
+padding: 50px;
+margin: 50px;
+}
+
+
+.caja-borde {
+background-color: #bbdefb;
+padding: 50px;
+border: 5px dashed blue; /* borde con guiones */
+margin: 10px;
+}
+
+
+.caja1{
+    width: 200px;
+    box-sizing: content-box;
+    box-sizing: border-box;
+    padding: 30px;
+    border: 5px solid red;
+}
+.caja2{
+    width: 200px;
+    box-sizing: content-box;
+    box-sizing: border-box;
+    padding: 30px;
+    border: 5px solid red;
+}
